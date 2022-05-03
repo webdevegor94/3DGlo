@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("my menu"),console.log("my slider"),console.log("best slider")})();

@@ -1,7 +1,5 @@
-const twoModule = () => {
-    const two = 'two'
-
-    console.log(two)
+const two = () => {
+    console.log('1two')
 }
 
-export default twoModule
+export default two

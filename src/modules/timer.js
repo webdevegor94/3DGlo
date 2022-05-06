@@ -20,17 +20,17 @@ const timer = (deadline) => {
         timerMinutes.textContent = getTime.minutes
         timerSeconds.textContent = getTime.seconds
 
-        // let timerID = setInterval(updateClock, 1000)
-
-        // // if (getTime.timeRemaining > 0) {
-        // //     clearInterval(timerID)
-        // // }
-        // // console.log(getTime.timeRemaining)
-        if (getTime.timeRemaining > 0) {
-            setTimeout(updateClock, 1000)
+        if (getTime.timeRemaining <= 0) {
+            clearInterval()
+            timerHours.textContent = '00'
+            timerMinutes.textContent = '00'
+            timerSeconds.textContent = '00'
         }
     }
     updateClock()
+    setInterval(updateClock, 1000)
+
+
 
 
 }
